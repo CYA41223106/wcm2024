@@ -2,7 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,10 +142,37 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content"> <a href='About.html'>Next</a> >> About<br /><h1>First</h1>
-<div>
-<div></div>
-<br /> <a href='About.html'>Next</a> >> About</div>
+    <div id="tipue_search_content">利用 Github Codespaces 維護倉儲 << <a href='利用 Github Codespaces 維護倉儲.html'>Previous</a> <a href='心得.html'>Next</a> >> 心得<br /><h1>常用的 git 指令</h1>
+<div><span>git 的新增、提交與推送指令:</span></div>
+<br/>
+<div><span>git add . git commit -m "說明字串" git push</span></div>
+<br/>
+<div><span>使用 git add . 表示要認列所進行的全部改版內容, git commit -m 執行之前, 若在近端使用, 必須先行設定 git config, 將 home_ipv6 目錄下的 .gitconfig 中明確列出改版者的身分, 其中包括:</span></div>
+<br/>
+<div><span>git config --global user.name "提交者的 github 帳號名稱"</span></div>
+<br/>
+<div><span>git config --global user.email "提交者在 github 所登錄的 email address"</span></div>
+<br/>
+<div><span>使用者也可以利用 git version 查詢目前所使用的 git 版本.</span></div>
+<br/>
+<div><span>git status 通常用來查核目前近端的改版狀況, 例如: 是否與遠端倉儲同步, 或者遠端倉儲已經有了新版本.</span></div>
+<br/>
+<div><span>若遠端倉儲已經有新的版本, 則在 git push 之前, 必須設法取下遠端資料進行合併後, 才能再提交新的版本並推送到遠端.</span></div>
+<br/>
+<div><span>git pull = git fetch + git merge</span></div>
+<br/>
+<div><span>由於要將各組員的 wcm2024 設定為各分組倉儲的子模組, 因此必須利用 git submodule add 以各組員的學號作為子目錄名稱, 利用下列指令, 將組員倉儲新增為分組倉儲的子模組:</span></div>
+<br/>
+<div><span>git submodule add 倉儲網址 子目錄</span></div>
+<br/>
+<div><span>若只要取下倉儲的主要內容, 可以使用下列指令:</span></div>
+<br/>
+<div><span>git clone 倉儲網址_協定.git 指定目錄與否</span></div>
+<br/>
+<div><span>若要取下帶有子模組的倉儲, 且可能該子模組還有設定其他子模組, 則必須要加上 --recurse-submodules:</span></div>
+<br/>
+<div><span>git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否</span></div>
+<br />利用 Github Codespaces 維護倉儲 << <a href='利用 Github Codespaces 維護倉儲.html'>Previous</a> <a href='心得.html'>Next</a> >> 心得</div>
 
     <!-- footer -->
       <div class="container">
