@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w2.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T17:18:04+08:00</updated><entry><title>WCM2024 W1課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T17:18:04+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w2.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T17:42:38+08:00</updated><entry><title>WCM2024 W2課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T17:42:38+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 
 
-&lt;h1&gt;利用 Codespaces 維護網站&lt;/h1&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry></feed>
+&lt;h1&gt;確認已建立個人網站&lt;/h1&gt;
+&lt;p&gt;1.登入 Github
+2.利用此連結https://github.com/mdecycu/cmsimde_site  "Create a new repository" 建立名稱為WCM2024的倉儲。
+在倉儲WCM2024的設定頁面中，點選Pages 中的 Branch 分支區域, 選擇將 main 分支存為網頁的 root 根目錄。
+等 wcm2024 的倉儲 Github Pages 轉檔完成後, 可以看到 commits 提交區的綠色勾勾, 就完成網址為 https://帳號.github.io/wcm2024 的個人課程網站&lt;/p&gt;
+&lt;h1&gt;利用Replit修改個人網站標題&lt;/h1&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry></feed>

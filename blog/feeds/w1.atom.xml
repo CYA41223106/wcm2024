@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w1</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w1.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T16:25:12+08:00</updated><entry><title>WCM2024 W1課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:50:00+08:00</published><updated>2024-06-15T16:25:12+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-14:/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;w1課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w1</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w1.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T17:56:13+08:00</updated><entry><title>WCM2024 W1課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:50:00+08:00</published><updated>2024-06-15T17:56:13+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-14:/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;w1課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;w1課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
 
 
 &lt;h1&gt;登入 MS Online&lt;/h1&gt;
 &lt;p&gt;上課時登入 MS Online, 目的是能在 MS Teams 中上課, 一邊觀看教學示範, 一邊自行操作.&lt;/p&gt;
 &lt;h1&gt;Github 帳號&lt;/h1&gt;
-&lt;p&gt;自行建立 Github 帳號,用來建立並維護個人的課程倉儲與網站.&lt;/p&gt;</content><category term="w1"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-18T11:00:00+08:00</published><updated>2024-06-15T09:53:20+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-02-18:/41223106/wcm2024/blog/2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+&lt;p&gt;自行建立 Github 帳號,用來建立並維護個人的課程倉儲與網站.&lt;/p&gt;
+&lt;h1&gt;課後心得&lt;/h1&gt;
+&lt;p&gt;第一堂的內容對我們來說不算太複雜，因為上學期剛上過，就當老師幫我們複習，當再一次聽課時就顯得相較簡單了，包刮Github及Replit的基本操作，以及創建網站。&lt;/p&gt;</content><category term="w1"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-18T11:00:00+08:00</published><updated>2024-06-15T09:53:20+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-02-18:/41223106/wcm2024/blog/2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 
