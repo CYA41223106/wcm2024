@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w4</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w4.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T20:35:46+08:00</updated><entry><title>WCM2024 W4課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w4.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T16:17:00+08:00</published><updated>2024-06-15T20:35:46+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-14:/41223106/wcm2024/blog/2024-Spring-w4.-blog-tutorial.html</id><summary type="html">&lt;p&gt;wcm2024第四週課程,複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;wcm2024第四週課程,複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法&lt;/p&gt;
+
+
+&lt;h1&gt;Replit 靜態網站檢視&lt;/h1&gt;
+&lt;p&gt;main2.py 與 static.py, 只要在 Shell 執行 python3 main2.py 就可以執行倉儲內的靜態網站檢視. 另一方面, 若要取消先前執行 python3 main2.py, 只需要在 Shell 頁面按下 ctrl + c, c 代表 cancle 也就是取消,然後若要執行動態網站，可以在 Shell 執行 python3 main.py 或者使用 Replit 的 Run 按鍵.&lt;/p&gt;
+&lt;h1&gt;Replit 建立分組倉儲權限&lt;/h1&gt;
+&lt;p&gt;由於 Replit 上的免費帳號僅允許與一個 Github 帳號對應, 因此若將分組網站 import 到 Replit, 必須自行在 /home/runner/.ssh 目錄下建立 id_rsa 與 config &lt;/p&gt;
+&lt;p&gt;而 Host 的設定與 Windows putty 中的 session 名稱相同, 配合使用的 ssh 連線指令將會是:
+git clone --recurse-submodules git@github.com:mdewcm2024/ag5.git&lt;/p&gt;
+&lt;p&gt;當使用者完成 /home/runner/.ssh 目錄中的 id_rsa 與 config 建立後,使用者必須將此兩個檔案存至隨身碟, 並在需要對分組倉儲改版時, 啟動分組倉儲的動態網站, 將隨身碟中的 id_rsa 與 config 檔案, upload 到分組倉儲的 downloads 目錄後, 再利用 ssh.py 的執行, 將 id_rsa 與 config 移動到 /home/runner/.ssh 目錄中. 也就是執行:python3 ssh.py&lt;/p&gt;
+&lt;h1&gt;Replit, Codespaces 與 Gitpod 執行動態與靜態網站&lt;/h1&gt;
+&lt;p&gt;說明如何在 Replit, Codespaces 與 Gitpod 維護並檢視網頁內容&lt;/p&gt;
+&lt;h1&gt;課後心得&lt;/h1&gt;
+&lt;p&gt;這週w5的學習內容開始變多，但很多東西都是前一堂課老師有先幫我們預習下一次要講的內容，所以才不會那麼吃力，操作內容也慢慢變多，希望下次我能跟得上，透過分組網站，讓我和我的同學一起思考，解決方法，感覺真好。&lt;/p&gt;</content><category term="w4"></category><category term="網誌編寫"></category></entry></feed>
