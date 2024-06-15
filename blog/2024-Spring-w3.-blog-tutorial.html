@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+      <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>網際內容管理系統 - Categories</title>
+  <title>WCM2024 W3課程內容</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="https://github.io/41223106/wcm2024/blog/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -38,6 +39,52 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
+    <link href="./2024-Spring-w3.-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="網際內容管理系統"/>
+<meta property="og:title" content="WCM2024 W3課程內容"/>
+<meta property="og:description" content="WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./2024-Spring-w3.-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-06-15 14:30:00+08:00"/>
+<meta property="article:modified_time" content="2024-06-15 19:36:28.236732+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="w3"/>
+<meta property="article:tag" content="網誌編寫"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "WCM2024 W3課程內容",
+  "headline": "WCM2024 W3課程內容",
+  "datePublished": "2024-06-15 14:30:00+08:00",
+  "dateModified": "2024-06-15 19:36:28.236732+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-Spring-w3.-blog-tutorial.html",
+  "description": "WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站"
+}
+</script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
@@ -140,9 +187,14 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
@@ -152,7 +204,14 @@ init_mathjax();
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">網際內容管理系統 - Categories</h1>
+        <h1 class="post-title">WCM2024 W3課程內容</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="Sat 15 June 2024">Sat 15 June 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on Sat 15 June 2024</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -166,21 +225,65 @@ init_mathjax();
     </form>
 </section>
 
-    <article class="post">
-      <div class="inner">
-        <a href="./category/w1.html">w1</a> (2)
-      </div>
-    </article>
-    <article class="post">
-      <div class="inner">
-        <a href="./category/w2.html">w2</a> (1)
-      </div>
-    </article>
-    <article class="post">
-      <div class="inner">
-        <a href="./category/w3.html">w3</a> (1)
-      </div>
-    </article>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站</p>
+
+
+<h1>利用 Github Classroom 分組</h1>
+<p>本組作業名稱為5a,組長在取得作業連結之後,建立各組Team,本組共有6名組員,透過作業連結加入ag5 Team </p>
+<p>完成ag5 Team 建立後, 將取得 mdewcm2024 帳號下的 1a-ag5 倉儲, 所有第五組的組員均對此分組倉儲有管理權, 可以使用登入 Github 的帳號權限進行改版</p>
+<p>必須動態在 /home/runner/.ssh 下建立 id_rsa 與 config 連線設定, 各組組員才能利用 Replit 管理分組網站內容</p>
+<h1>利用 Github Codespaces 維護倉儲</h1>
+<p>使用 Replit 管理分組網站, 必須採動態建立 .ssh 目錄中的私鑰與 config, 過程比較複雜, 但若採用 Github Codespaces, 則可以在登入 Github 帳號下, 管理該帳號所有授權的倉儲, 包括分組倉儲與網站</p>
+<h1>常用的 git 指令</h1>
+<p>git 的新增、提交與推送指令:</p>
+<p>git add . git commit -m "說明字串" git push</p>
+<p>使用 git add . 表示要認列所進行的全部改版內容, git commit -m 執行之前, 若在近端使用, 必須先行設定 git config, 將 home_ipv6 目錄下的 .gitconfig 中明確列出改版者的身分, 其中包括:</p>
+<p>git config --global user.name "提交者的 github 帳號名稱"</p>
+<p>git config --global user.email "提交者在 github 所登錄的 email address"</p>
+<p>使用者也可以利用 git version 查詢目前所使用的 git 版本.</p>
+<p>git status 通常用來查核目前近端的改版狀況, 例如: 是否與遠端倉儲同步, 或者遠端倉儲已經有了新版本.</p>
+<p>若遠端倉儲已經有新的版本, 則在 git push 之前, 必須設法取下遠端資料進行合併後, 才能再提交新的版本並推送到遠端.</p>
+<p>git pull = git fetch + git merge</p>
+<p>由於要將各組員的 wcm2024 設定為各分組倉儲的子模組, 因此必須利用 git submodule add 以各組員的學號作為子目錄名稱, 利用下列指令, 將組員倉儲新增為分組倉儲的子模組:</p>
+<p>git submodule add 倉儲網址 子目錄</p>
+<p>若只要取下倉儲的主要內容, 可以使用下列指令:</p>
+<p>git clone 倉儲網址_協定.git 指定目錄與否</p>
+<p>若要取下帶有子模組的倉儲, 且可能該子模組還有設定其他子模組, 則必須要加上 --recurse-submodules:</p>
+<p>git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否</p>
+<h1>心得</h1>
+<p>W3的課程學習到關於建立分組網站的操作以及利用上次所講的Codespaces來做分組網站的維護，建造分組網站後，需學習如何讓每個人都有權限去做帳號及內容管理，還有在程式中關於git的各種不同涵義的指令，在日後的內容新增及上傳的作用非常大。</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie.html">網誌編寫</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-Spring-w2.-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">WCM2024 W2課程內容</h2>
+                            <p class="post-nav-excerpt">WCM2024第二週課程,利用 Github Codespaces 維護個人與分組網站.</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 

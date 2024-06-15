@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T18:52:19+08:00</updated><entry><title>WCM2024 W2課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T18:52:19+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T19:36:28+08:00</updated><entry><title>WCM2024 W3課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w3.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T14:30:00+08:00</published><updated>2024-06-15T19:36:28+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w3.-blog-tutorial.html</id><summary type="html">&lt;p&gt;WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;WCM2024第三週課程, 除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站&lt;/p&gt;
+
+
+&lt;h1&gt;利用 Github Classroom 分組&lt;/h1&gt;
+&lt;p&gt;本組作業名稱為5a,組長在取得作業連結之後,建立各組Team,本組共有6名組員,透過作業連結加入ag5 Team &lt;/p&gt;
+&lt;p&gt;完成ag5 Team 建立後, 將取得 mdewcm2024 帳號下的 1a-ag5 倉儲, 所有第五組的組員均對此分組倉儲有管理權, 可以使用登入 Github 的帳號權限進行改版&lt;/p&gt;
+&lt;p&gt;必須動態在 /home/runner/.ssh 下建立 id_rsa 與 config 連線設定, 各組組員才能利用 Replit 管理分組網站內容&lt;/p&gt;
+&lt;h1&gt;利用 Github Codespaces 維護倉儲&lt;/h1&gt;
+&lt;p&gt;使用 Replit 管理分組網站, 必須採動態建立 .ssh 目錄中的私鑰與 config, 過程比較複雜, 但若採用 Github Codespaces, 則可以在登入 Github 帳號下, 管理該帳號所有授權的倉儲, 包括分組倉儲與網站&lt;/p&gt;
+&lt;h1&gt;常用的 git 指令&lt;/h1&gt;
+&lt;p&gt;git 的新增、提交與推送指令:&lt;/p&gt;
+&lt;p&gt;git add . git commit -m "說明字串" git push&lt;/p&gt;
+&lt;p&gt;使用 git add . 表示要認列所進行的全部改版內容, git commit -m 執行之前, 若在近端使用, 必須先行設定 git config, 將 home_ipv6 目錄下的 .gitconfig 中明確列出改版者的身分, 其中包括:&lt;/p&gt;
+&lt;p&gt;git config --global user.name "提交者的 github 帳號名稱"&lt;/p&gt;
+&lt;p&gt;git config --global user.email "提交者在 github 所登錄的 email address"&lt;/p&gt;
+&lt;p&gt;使用者也可以利用 git version 查詢目前所使用的 git 版本.&lt;/p&gt;
+&lt;p&gt;git status 通常用來查核目前近端的改版狀況, 例如: 是否與遠端倉儲同步, 或者遠端倉儲已經有了新版本.&lt;/p&gt;
+&lt;p&gt;若遠端倉儲已經有新的版本, 則在 git push 之前, 必須設法取下遠端資料進行合併後, 才能再提交新的版本並推送到遠端.&lt;/p&gt;
+&lt;p&gt;git pull = git fetch + git merge&lt;/p&gt;
+&lt;p&gt;由於要將各組員的 wcm2024 設定為各分組倉儲的子模組, 因此必須利用 git submodule add 以各組員的學號作為子目錄名稱, 利用下列指令, 將組員倉儲新增為分組倉儲的子模組:&lt;/p&gt;
+&lt;p&gt;git submodule add 倉儲網址 子目錄&lt;/p&gt;
+&lt;p&gt;若只要取下倉儲的主要內容, 可以使用下列指令:&lt;/p&gt;
+&lt;p&gt;git clone 倉儲網址_協定.git 指定目錄與否&lt;/p&gt;
+&lt;p&gt;若要取下帶有子模組的倉儲, 且可能該子模組還有設定其他子模組, 則必須要加上 --recurse-submodules:&lt;/p&gt;
+&lt;p&gt;git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否&lt;/p&gt;
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;W3的課程學習到關於建立分組網站的操作以及利用上次所講的Codespaces來做分組網站的維護，建造分組網站後，需學習如何讓每個人都有權限去做帳號及內容管理，還有在程式中關於git的各種不同涵義的指令，在日後的內容新增及上傳的作用非常大。&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W2課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T19:13:08+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;WCM2024第二週課程,利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;WCM2024第二週課程,利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 
 
 &lt;h1&gt;確認已建立個人網站&lt;/h1&gt;
@@ -18,8 +45,8 @@
 &lt;h1&gt;心得&lt;/h1&gt;
 &lt;p&gt;W2的課程讓我學到很多新的東西以及複習舊知識&lt;/p&gt;
 &lt;p&gt;新:能夠再Github中使用Codespace直接將動態網站上編輯好的東西push到靜態網站上，使用Codespace能夠同時查看到動態與靜態的變化，使我更加方便。&lt;/p&gt;
-&lt;p&gt;舊:更改個人網站標題，在之前上學期的課程中有學習過&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W1課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:50:00+08:00</published><updated>2024-06-15T17:56:13+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-14:/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;w1課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;w1課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
+&lt;p&gt;舊:更改個人網站標題，在之前上學期的課程中有學習過&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W1課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html" rel="alternate"></link><published>2024-06-14T23:50:00+08:00</published><updated>2024-06-15T19:12:59+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-14:/41223106/wcm2024/blog/2024-Spring-w1.-blog-tutorial.html</id><summary type="html">&lt;p&gt;wcm2024第一週課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;wcm2024第一週課程,登入 MS Online, 建立個人 Github 帳號, 以及利用 cmsimde_site 作為 Template 建立個人課程網站.&lt;/p&gt;
 
 
 &lt;h1&gt;登入 MS Online&lt;/h1&gt;
