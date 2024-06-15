@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w2.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T18:48:42+08:00</updated><entry><title>WCM2024 W2課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T18:48:42+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/w2.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-15T18:52:19+08:00</updated><entry><title>WCM2024 W2課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T13:27:00+08:00</published><updated>2024-06-15T18:52:19+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-15:/41223106/wcm2024/blog/2024-Spring-w2.-blog-tutorial.html</id><summary type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;四技 WCM 第二週課程, 利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 
 
@@ -16,6 +16,6 @@
 &lt;p&gt;使用 Github Codespaces 維護網站的好處是提供多終端機與多 ports 開啟功能
 能夠同時開啟靜態網站與動態網站&lt;/p&gt;
 &lt;h1&gt;心得&lt;/h1&gt;
-&lt;p&gt;W2的課程讓我學到很多新的東西以及複習舊知識
-新:能夠再Github中使用Codespace直接將動態網站上編輯好的東西push到靜態網站上，使用Codespace能夠同時查看到動態與靜態的變化，使我更加方便。
-舊:更改個人網站標題，在之前上學期的課程中有學習過&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry></feed>
+&lt;p&gt;W2的課程讓我學到很多新的東西以及複習舊知識&lt;/p&gt;
+&lt;p&gt;新:能夠再Github中使用Codespace直接將動態網站上編輯好的東西push到靜態網站上，使用Codespace能夠同時查看到動態與靜態的變化，使我更加方便。&lt;/p&gt;
+&lt;p&gt;舊:更改個人網站標題，在之前上學期的課程中有學習過&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry></feed>
