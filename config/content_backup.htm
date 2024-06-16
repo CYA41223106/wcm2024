@@ -38,6 +38,12 @@
 <div><span>使用 Github Codespaces 維護網站的好處是提供多終端機與多 ports 開啟功能</span></div>
 <div><span>能夠同時開啟靜態網站與動態網站</span></div>
 <div>
+<h3>心得</h3>
+<div><span>W2的課程讓我學到很多新的東西以及複習舊知識</span></div>
+<div>新:能夠再Github中使用Codespace直接將動態網站上編輯好的東西push到靜態網站上，使用Codespace能夠同時查看到動態與靜態的變化，使我更加方便。</div>
+<div><span>舊:更改個人網站標題，在之前上學期的課程中有學習過<br/></span></div>
+</div>
+<div>
 <div><span></span></div>
 </div>
 <h2>w3</h2>
@@ -93,17 +99,30 @@
 <div><span>main2.py 與 static.py, 只要在 Shell 執行 python3 main2.py 就可以執行倉儲內的靜態網站檢視. 另一方面, 若要取消先前執行 python3 main2.py, 只需要在 Shell 頁面按下 ctrl + c, c 代表 cancle 也就是取消,然後若要執行動態網站，可以在 Shell 執行 python3 main.py 或者使用 Replit 的 Run 按鍵.</span></div>
 <h3>Replit 建立分組倉儲權限</h3>
 <div><span>由於 Replit 上的免費帳號僅允許與一個 Github 帳號對應, 因此若將分組網站 import 到 Replit, 必須自行在 /home/runner/.ssh 目錄下建立 id_rsa 與 config</span></div>
-<br/>
+<div>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">Host github.com
+User git
+Hostname github.com</pre>
+<span><br/></span></div>
+<div></div>
 <div><span>而 Host 的設定與 Windows putty 中的 session 名稱相同, 配合使用的 ssh 連線指令將會是:</span></div>
-<div><span>git clone --recurse-submodules git@github.com:mdewcm2024/ag5.git</span></div>
-<br/>
+<div>git clone --recurse-submodules <a href="mailto:git@github.com:mdewcm2024/ag5.git">git@github.com:mdewcm2024/ag5.git</a></div>
+<div></div>
 <div><span>當使用者完成 /home/runner/.ssh 目錄中的 id_rsa 與 config 建立後,使用者必須將此兩個檔案存至隨身碟, 並在需要對分組倉儲改版時, 啟動分組倉儲的動態網站, 將隨身碟中的 id_rsa 與 config 檔案, upload 到分組倉儲的 downloads 目錄後, 再利用 ssh.py 的執行, 將 id_rsa 與 config 移動到 /home/runner/.ssh 目錄中. 也就是執行:python3 ssh.py</span></div>
-<h3>Replit, Codespaces 與 Gitpod 執行動態與靜態網站</h3>
+<div>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">import os
+if not os.path.exists("/home/runner/.ssh"): 
+    os.makedirs("/home/runner/.ssh") 
+os.system("mv ./downloads/id_rsa.txt /home/runner/.ssh/id_rsa")
+os.system("mv ./downloads/config.txt /home/runner/.ssh/config")
+os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
+<span><br/></span></div><h3>Replit, Codespaces 與 Gitpod 執行動態與靜態網站</h3>
 <div><span>說明如何在 Replit, Codespaces 與 Gitpod 維護並檢視網頁內容</span></div>
 <h3>課後心得</h3>
 <div><span>這週w4的學習內容開始變多，但很多東西都是前一堂課老師有先幫我們預習下一次要講的內容，所以才不會那麼吃力，操作內容也慢慢變多，希望下次我能跟得上，透過分組網站，讓我和我的同學一起思考，解決方法，感覺真好。</span></div>
-</div>
+<div><span> </span></div>
 <h1>cmsimde</h1>
+</div>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
