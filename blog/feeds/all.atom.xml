@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-19T10:47:13+08:00</updated><entry><title>WCM2024 W13課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:48:00+08:00</published><updated>2024-06-19T10:47:13+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十三週課，從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
-</content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W11課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:41:00+08:00</published><updated>2024-06-19T10:43:29+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十一週課，說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-19T10:58:01+08:00</updated><entry><title>WCM2024 W13課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:48:00+08:00</published><updated>2024-06-19T10:58:01+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html</id><summary type="html">&lt;p&gt;wcm2024第十三週課，從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;wcm2024第十三週課，從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
+
+
+&lt;h1&gt;先看看 Linux&lt;/h1&gt;
+&lt;p&gt;在 Linux 設定全域 Proxy 伺服器的位置, 可以是 /etc/environment 檔案中的:&lt;/p&gt;
+&lt;p&gt;http_proxy="http://your_proxy_server:port"&lt;/p&gt;
+&lt;p&gt;https_proxy="http://your_proxy_server:port"&lt;/p&gt;
+&lt;h1&gt;猜猜看遊戲&lt;/h1&gt;
+&lt;p&gt;guess_game.7z 是在 AI 輔助下, 將簡單的單人 Brython 線上猜數字遊戲 轉化為可以多人同場比賽猜數字的線上遊戲.&lt;/p&gt;
+&lt;p&gt;值得加入的功能:&lt;/p&gt;
+&lt;p&gt;1.具有管理者模式, 可以重新啟動伺服器.
+2.可讓參賽者經由 Github、Gmail 或其他支援 Oauth2 登入協定的帳號登入.
+3.加入資料庫, 儲存參賽者的得分資料、歷史紀錄並提供排行榜等功能.
+4.加入其他可多人線上參與競技或進行同步對話功能, 或納入其他專業相關的協同設計功能.&lt;/p&gt;</content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W11課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:41:00+08:00</published><updated>2024-06-19T10:43:29+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十一週課，說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 </content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 課程期中整理</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-%E8%AA%B2%E7%A8%8B%E6%9C%9F%E4%B8%AD%E6%95%B4%E7%90%86.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:01:00+08:00</published><updated>2024-06-16T17:33:34+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-課程期中整理.-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;網頁式內容管理&lt;/h1&gt;
