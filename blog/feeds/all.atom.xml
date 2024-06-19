@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-19T10:43:29+08:00</updated><entry><title>WCM2024 W13課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:48:00+08:00</published><updated>2024-06-16T17:50:10+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十三週課，---
-Title: WCM2024 W8課程內容 
-Date: 2024-06-16 00:24
-Category: w8
-Tags: 網誌編寫
-Slug: 2024-Spring-w8.-blog-tutorial
-Author: kmol&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;wcm2024第十三週課，從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="https://github.io/41223106/wcm2024/blog/" rel="alternate"></link><link href="https://github.io/41223106/wcm2024/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.io/41223106/wcm2024/blog/</id><updated>2024-06-19T10:47:13+08:00</updated><entry><title>WCM2024 W13課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:48:00+08:00</published><updated>2024-06-19T10:47:13+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w13.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十三週課，從單機猜數字遊戲與 AI 應用談起&lt;/p&gt;
 </content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 W11課程內容</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:41:00+08:00</published><updated>2024-06-19T10:43:29+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-w11.-blog-tutorial.html</id><content type="html">&lt;p&gt;wcm2024第十一週課，說明如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 </content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>WCM2024 課程期中整理</title><link href="https://github.io/41223106/wcm2024/blog/2024-Spring-%E8%AA%B2%E7%A8%8B%E6%9C%9F%E4%B8%AD%E6%95%B4%E7%90%86.-blog-tutorial.html" rel="alternate"></link><published>2024-06-16T01:01:00+08:00</published><updated>2024-06-16T17:33:34+08:00</updated><author><name>kmol</name></author><id>tag:github.io,2024-06-16:/41223106/wcm2024/blog/2024-Spring-課程期中整理.-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
