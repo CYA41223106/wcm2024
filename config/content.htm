@@ -602,8 +602,88 @@ filter_and_save_csv(rollcall_file, midterm_file, output_file) # 呼叫函式，�
 </div>
 </div>
 <h1>期末專案</h1>
-<p></p>
-<h1>cmsimde</h1>
+<p><span>三子棋小遊戲程式:</span></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Tic Tac Toe&lt;/title&gt;
+&lt;style&gt;
+.board {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-gap: 5px;
+margin-bottom: 20px;
+}
+.cell {
+width: 100px;
+height: 100px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+cursor: pointer;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="board"&gt;
+{% for cell in board %}
+&lt;div class="cell" onclick="makeMove({{ loop.index0 }})"&gt;{{ cell }}&lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+&lt;div id="message"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+document.addEventListener('keydown', function(event) {
+if (event.key === 'r') {
+restartGame();
+}
+});
+
+function makeMove(position) {
+fetch('/make_move', {
+method: 'POST',
+body: new URLSearchParams({
+position: position
+}),
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+})
+.then(response =&gt; response.json())
+.then(data =&gt; {
+if (data.valid_move) {
+document.querySelectorAll('.cell')[position].innerText = data.board[position];
+if (data.winner) {
+document.getElementById('message').innerText = data.winner === 'Tie' ? 'It\'s a tie!' : `Player ${data.winner} wins!`;
+document.querySelectorAll('.cell').forEach(cell =&gt; cell.onclick = null);
+}
+}
+});
+}
+
+function restartGame() {
+fetch('/restart_game', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+})
+.then(response =&gt; response.json())
+.then(data =&gt; {
+if (data.success) {
+window.location.reload();
+}
+});
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>小遊戲示範影片:</p>
+<p><a href="https://yan41223101.github.io/wcm2024/downloads/Tic%20Tac%20Toe%20-%20Google%20Chrome%202024-06-06%2011-42-12.mp4">https://yan41223101.github.io/wcm2024/downloads/Tic%20Tac%20Toe%20-%20Google%20Chrome%202024-06-06%2011-42-12.mp4</a> </p><h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>

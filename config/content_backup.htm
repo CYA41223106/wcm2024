@@ -348,6 +348,47 @@ def process_file(file_path):
 file_path = '1a_w14.txt'  # 檔案路徑
 processed_text = process_file(file_path)
 print(processed_text)</pre>
+<p>以下程式則可讀取 w14 點名 csv 檔案, 並從期中自評表 csv 檔案中剃除已經退選者的資料:</p>
+<p>處理方式: 利用 csv 模組讀取各列資料, 以 w14 留下的學員學號為基準, 接著讀取期中期望資料時, 只能下仍在 w14 名單中的學員資料</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">import csv # 導入 csv 模組，用於處理 csv 檔案
+ 
+def filter_and_save_csv(rollcall_file, midterm_file, output_file):
+  """
+  讀取兩個 csv 檔案，篩選學號後儲存。
+ 
+  Args:
+    rollcall_file: 點名 csv 檔案路徑。
+    midterm_file: 期中成績 csv 檔案路徑。
+    output_file: 輸出 csv 檔案路徑。
+  """
+ 
+  # 讀取點名檔案中的學號
+  valid_student_ids = set() # 建立一個空的集合，用於儲存有效的學號
+  with open(rollcall_file, 'r', encoding='utf-8') as f: # 開啟點名 csv 檔案，使用 utf-8 編碼讀取
+    reader = csv.reader(f) # 建立 csv 讀取器
+    next(reader) # 跳過標題列
+    for row in reader: # 逐行讀取點名檔案
+      student_id = row[0].strip() # 取得學號，並去除前後空白
+      valid_student_ids.add(student_id) # 將學號加入到有效的學號集合中
+ 
+  # 讀取期中成績檔案，篩選學號並儲存
+  with open(midterm_file, 'r', encoding='utf-8') as f_in, open(output_file, 'w', encoding='utf-8', newline='') as f_out: 
+    # 同時開啟期中成績 csv 檔案（讀取模式）和輸出 csv 檔案（寫入模式），使用 utf-8 編碼，並設定 newline='' 以避免空行
+    reader = csv.reader(f_in) # 建立 csv 讀取器
+    writer = csv.writer(f_out) # 建立 csv 寫入器
+    writer.writerow(next(reader)) # 將期中成績 csv 檔案的第一行（標題列）寫入輸出檔案
+    for row in reader: # 逐行讀取期中成績檔案
+      student_id = row[0].strip() # 取得學號，並去除前後空白
+      if student_id in valid_student_ids: # 檢查學號是否存在於有效的學號集合中
+        writer.writerow(row) # 若存在，則將該學生的完整資料寫入輸出檔案
+ 
+# 設定檔案路徑
+rollcall_file = '1a_w14_rollcall.csv' # 點名 csv 檔案路徑
+midterm_file = '1a wcm2024 midterm - Sheet1.csv' # 期中成績 csv 檔案路徑
+output_file = '1a_wcm2024_midterm_wishful.csv' # 輸出 csv 檔案路徑
+ 
+# 執行篩選和儲存
+filter_and_save_csv(rollcall_file, midterm_file, output_file) # 呼叫函式，執行篩選和儲存操作</pre>
 <p><br/><br/></p>
 <p></p><h1>課程期中心得</h1>
 <div>
@@ -393,9 +434,9 @@ print(processed_text)</pre>
 <div><span>3.超連結:使用超連結來連接不同章節或其他網站。在HTML中，你可以使用 </span><span>&lt;a&gt;</span><span> 標籤來創建超連結，而Markdown則提供了 [</span><span>連結文字</span><span>](</span><span>連結URL</span><span>) 的語法。</span></div>
 <br/>
 <div><span>4.引用:引用其他資料或文字也是常見的做法。你可以使用Markdown的引用語法（&gt; 引用文字）或HTML的 </span><span>&lt;blockquote&gt;</span><span> 標籤來添加引用內容。</span></div>
-<br>
+<br/>
 <div><span>Q6:動態圖文?</span></div>
-<br>
+<br/>
 <div><span>A6:</span></div>
 <br/>
 <div><span>1.動畫:使用CSS或JavaScript來創建和控制動畫效果，使圖片、文本或其他元素呈現動態效果。你可以使用CSS的 @keyframes 樣式或JavaScript的動畫庫（如Animate.css）來添加動畫。</span></div>
@@ -542,7 +583,7 @@ print(processed_text)</pre>
 <div><span>ChatGPT 與 Gemini Pro 都可以直接利用 Gmail 帳號登入, 初級應用目前都可免費使用, 這兩個 AI 工具可以協助我們解決甚麼問題? </span></div>
 <br/>
 <div><span>AI 工具曾經協助我們解決甚麼問題?</span></div>
-</br></br></div>
+</div>
 </section></div>
 </div>
 </div>
@@ -561,8 +602,88 @@ print(processed_text)</pre>
 </div>
 </div>
 <h1>期末專案</h1>
-<p></p>
-<h1>cmsimde</h1>
+<p><span>三子棋小遊戲程式:</span></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Tic Tac Toe&lt;/title&gt;
+&lt;style&gt;
+.board {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-gap: 5px;
+margin-bottom: 20px;
+}
+.cell {
+width: 100px;
+height: 100px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+cursor: pointer;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="board"&gt;
+{% for cell in board %}
+&lt;div class="cell" onclick="makeMove({{ loop.index0 }})"&gt;{{ cell }}&lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+&lt;div id="message"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+document.addEventListener('keydown', function(event) {
+if (event.key === 'r') {
+restartGame();
+}
+});
+
+function makeMove(position) {
+fetch('/make_move', {
+method: 'POST',
+body: new URLSearchParams({
+position: position
+}),
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+})
+.then(response =&gt; response.json())
+.then(data =&gt; {
+if (data.valid_move) {
+document.querySelectorAll('.cell')[position].innerText = data.board[position];
+if (data.winner) {
+document.getElementById('message').innerText = data.winner === 'Tie' ? 'It\'s a tie!' : `Player ${data.winner} wins!`;
+document.querySelectorAll('.cell').forEach(cell =&gt; cell.onclick = null);
+}
+}
+});
+}
+
+function restartGame() {
+fetch('/restart_game', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+})
+.then(response =&gt; response.json())
+.then(data =&gt; {
+if (data.success) {
+window.location.reload();
+}
+});
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>小遊戲示範影片:</p>
+<p><a href="https://yan41223101.github.io/wcm2024/downloads/Tic%20Tac%20Toe%20-%20Google%20Chrome%202024-06-06%2011-42-12.mp4">https://yan41223101.github.io/wcm2024/downloads/Tic%20Tac%20Toe%20-%20Google%20Chrome%202024-06-06%2011-42-12.mp4</a> </p><h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
