@@ -34,7 +34,8 @@
 <div><span>在 Replit 檢視動態網站或網誌推送到 Github 之前的內容, 必須要在動態與靜態模式中擇一使用.</span></div>
 <div><span>1.登入Replit</span></div>
 <div><span>2.進入個人網頁後,log in,將cmsimde_site選取後點擊Config更改標題,名稱為wcm2024 CYA41223106</span></div>
-<h3>利用 Codespaces 維護網站</h3>
+<div><span></span></div>
+<div><span><img caption="false" height="38" src="/images/333.png" width="200"/></span></div><h3>利用 Codespaces 維護網站</h3>
 <div><span>使用 Github Codespaces 維護網站的好處是提供多終端機與多 ports 開啟功能</span></div>
 <div><span>能夠同時開啟靜態網站與動態網站</span></div>
 <div>
@@ -312,14 +313,43 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <p>4.加入其他可多人線上參與競技或進行同步對話功能, 或納入其他專業相關的協同設計功能.</p>
 <h2>w14</h2>
 <p><span>wcm2024第十四週課，有關可攜程式系統的批次檔案說明</span></p>
-<p></p>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<h1>課程期中心得</h1>
+<h3>可攜程式系統</h3>
+<p>以下為 Python 參考程式:</p>
+<p>將原先沒有 tab 符號介入兩行資料的原始檔案, 利用 Python 轉為 csv 檔案格式:</p>
+<p>處理方式: 逐列透過空白分割, 若隨後沒有資料加入 tab 符號, 若有資料則將空白換為 tab 符號, 然後列印出 (也可以直接存檔)</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">import io
+ 
+def process_file(file_path):
+  """
+  讀取檔案，處理後回傳處理後的文字。
+ 
+  Args:
+    file_path: 檔案路徑。
+ 
+  Returns:
+    處理後的文字。
+  """
+ 
+  with open(file_path, 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+ 
+  processed_lines = [lines[0].strip()]  # 保留第一行標題
+ 
+  for line in lines[1:]:
+    parts = line.strip().split(" ", 1)  # 只分割一次，以保留後面的空白和中文字
+    if len(parts) == 1:
+      processed_lines.append(parts[0] + "\t")  # 若沒有後續資料，加tab
+    else:
+      processed_lines.append(parts[0] + "\t" + parts[1])  # 將空白換成tab
+ 
+  return "\n".join(processed_lines)
+ 
+# 測試
+file_path = '1a_w14.txt'  # 檔案路徑
+processed_text = process_file(file_path)
+print(processed_text)</pre>
+<p><br/><br/></p>
+<p></p><h1>課程期中心得</h1>
 <div>
 <h2>網頁式內容管理</h2>
 <div><span>Q1:如何建立 Github 上的網站?</span></div>
@@ -363,9 +393,9 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <div><span>3.超連結:使用超連結來連接不同章節或其他網站。在HTML中，你可以使用 </span><span>&lt;a&gt;</span><span> 標籤來創建超連結，而Markdown則提供了 [</span><span>連結文字</span><span>](</span><span>連結URL</span><span>) 的語法。</span></div>
 <br/>
 <div><span>4.引用:引用其他資料或文字也是常見的做法。你可以使用Markdown的引用語法（&gt; 引用文字）或HTML的 </span><span>&lt;blockquote&gt;</span><span> 標籤來添加引用內容。</span></div>
-<br/>
+<br>
 <div><span>Q6:動態圖文?</span></div>
-<br/>
+<br>
 <div><span>A6:</span></div>
 <br/>
 <div><span>1.動畫:使用CSS或JavaScript來創建和控制動畫效果，使圖片、文本或其他元素呈現動態效果。你可以使用CSS的 @keyframes 樣式或JavaScript的動畫庫（如Animate.css）來添加動畫。</span></div>
@@ -512,8 +542,8 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <div><span>ChatGPT 與 Gemini Pro 都可以直接利用 Gmail 帳號登入, 初級應用目前都可免費使用, 這兩個 AI 工具可以協助我們解決甚麼問題? </span></div>
 <br/>
 <div><span>AI 工具曾經協助我們解決甚麼問題?</span></div>
-</div>
-</div>
+</br></br></div>
+</section></div>
 </div>
 </div>
 <div>
@@ -856,4 +886,4 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
 </div>
-</div>
+</div></div></div></div></div></div>
